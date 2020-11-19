@@ -1,0 +1,16 @@
+{{>header}}
+<div class="jumbotron jumbotron-fluid home">
+  <div class="container">
+    <h1 class="display-4 heading">Stockify</h1>
+    <p class="lead sub-heading">Get real time stock market details of any company!</p>
+  </div>
+</div>
+<form class="input-form">
+  <h3 class="form-heading">Get the latest information of any company!</h3>
+  <input class="name-input" type="text" placeholder="Provide a company code">
+  <br>
+  <button type="button fetch-btn" class="btn btn-dark">Fetch</button>
+  {{>details}}
+  {{>players}}
+</form>
+{{>footer}}

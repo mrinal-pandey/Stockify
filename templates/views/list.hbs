@@ -1,0 +1,18 @@
+{{>header}}
+<div class="list-ticker">
+    <table border="1" align="center">
+        <thead>
+            <th>Company name</th>
+            <th>Ticker</th>
+        </thead>
+        <tbody>
+            {{#each list}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.symbol}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+{{>footer}}
