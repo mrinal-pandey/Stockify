@@ -17,7 +17,6 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(publicDirectoryPath));
 
 app.get('/', (req, res) => {
-    console.log(process.env.API_KEY);
     res.render("index");
 })
 

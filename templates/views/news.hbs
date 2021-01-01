@@ -1,14 +1,14 @@
 {{>header}}
+<h1 class="news-heading">Stock market News</h1>
 <div class="card-group news">
     {{#each news}}
     <div class="card news-card">
         <img src={{this.image}} class="card-img-top">
         <div class="card-body">
-            <h5 class="card-title">{{this.title}}</h5>
-            <p class="card-text">{{this.text}}</p>
-        </div>
-        <div class="card-footer">
-            {{this.publishedDate}}
+            <p class="news-date">{{this.publishedDate}}</p>
+            <hr>
+            <h5 class="news-title card-title">{{this.title}}</h5>
+            <p class="news-text card-text">{{this.text}}</p>
         </div>
     </div>
     {{/each}}

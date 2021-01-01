@@ -22,26 +22,24 @@ $('.input-form').submit((e) => {
     fetch('/details?company=' + name).then((response) => {
         response.json().then((data) => {
             $('.loading').hide();
-            $('.detail-row').show();
             $('.company-logo').attr("src", data.details[0].image);
             $('.website').attr("href", data.details[0].website);
             $('.website').html(data.details[0].companyName);
-            $('.price').html("<strong>Price:</strong>    " + data.details[0].price);
-            $('.market-capital').html("<strong>Market Capital:</strong>  " + data.details[0].mktCap);
-            $('.last-dividend').html("<strong>Last dividend:</strong>    " + data.details[0].lastDiv);
-            $('.currency').html("<strong>Currency:</strong>  " + data.details[0].currency);
-            $('.exchange').html("<strong>Exchange:</strong>  " + data.details[0].exchange);
-            $('.sector').html("<strong>Sector:</strong>  " + data.details[0].sector);
-            $('.industry').html("<strong>Industry:</strong>  " + data.details[0].industry);
-            $('.country').html("<strong>Country:</strong>    " + data.details[0].country);
-            $('.dcf').html("<strong>Discounted cash flow:</strong>   " + data.details[0].dcf);
-            $('.changes-percent').html("<strong>Changes Percent:</strong>   " + data.quote[0].changesPercentage);
-            $('.day-low').html("<strong>Day Low:</strong>   " + data.quote[0].dayLow);
-            $('.day-high').html("<strong>Day High:</strong>   " + data.quote[0].dayHigh);
-            $('.year-low').html("<strong>Year Low:</strong>   " + data.quote[0].yearLow);
-            $('.year-high').html("<strong>Year High:</strong>   " + data.quote[0].yearHigh);
-            $('.open').html("<strong>Open:</strong>   " + data.quote[0].open);
-            $('.previous-close').html("<strong>Previous Close:</strong>   " + data.quote[0].previousClose);
+            $('.price').html(data.details[0].price);
+            $('.market-capital').html(data.details[0].mktCap);
+            $('.last-dividend').html(data.details[0].lastDiv);
+            $('.currency').html(data.details[0].currency);
+            $('.exchange').html(data.details[0].exchange);
+            $('.sector').html(data.details[0].sector);
+            $('.industry').html(data.details[0].industry);
+            $('.country').html(data.details[0].country);
+            $('.dcf').html(data.details[0].dcf);
+            $('.changes-percent').html(data.quote[0].changesPercentage);
+            $('.day-low').html(data.quote[0].dayLow);
+            $('.day-high').html(data.quote[0].dayHigh);
+            $('.year-low').html(data.quote[0].yearLow);
+            $('.year-high').html(data.quote[0].yearHigh);
+            $('.open').html(data.quote[0].open);
         })
     })
 })
