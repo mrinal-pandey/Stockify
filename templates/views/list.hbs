@@ -1,15 +1,18 @@
 {{>header}}
+<h1 class="news-heading">List of companies</h1>
 <div class="list-ticker">
-    <table border="1" align="center">
-        <thead>
-            <th>Company name</th>
-            <th>Ticker</th>
-        </thead>
+    <table class="list-ticker-table" align="center">
+        <tr style="font-weight: bold; border-bottom: 2px solid #bc6ff1;">
+            <td style="text-align: left; font-size: 2rem; ">Company name</td>
+            <td>    </td>
+            <td style="text-align: right; font-size: 2rem; ">Ticker</td>
+        </tr>
         <tbody>
             {{#each list}}
             <tr>
-                <td>{{this.name}}</td>
-                <td>{{this.symbol}}</td>
+                <td style="text-align: left;">{{this.name}}</td>
+                <td>    </td>
+                <td style="text-align: right;">{{this.symbol}}</td>
             </tr>
             {{/each}}
         </tbody>

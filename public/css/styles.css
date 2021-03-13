@@ -209,6 +209,25 @@ hr {
     padding: 5rem;
 }
 
+.list-ticker-table {
+    border: 5px solid #bc6ff1;
+}
+
+td {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+tr:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #bc6ff1;
+    color: black;
+}
+
 footer {
     color: #fff;
     background-color: #000;
